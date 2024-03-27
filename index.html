@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            background-color: crimson;
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            height: 300px;
+            width: 300px;
+            gap: 5px;
+            text-align: center;
+        }
+        .cd{
+            background-color: darkcyan;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .cd1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            margin-top: 10px;       
+        }
+        .cd2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .cd3{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .cd6{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            margin-bottom: 10px;
+        }
+        .cd4, .cd5{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="cd cd1">header</div>
+        <div class="cd cd2">sidebar</div>
+        <div class="cd cd3">content-1</div>
+        <div class="cd cd4">content-2</div>
+        <div class="cd cd5">content-3</div>
+        <div class="cd cd6">footer</div>
+    </div>
+</body>
+</html>
